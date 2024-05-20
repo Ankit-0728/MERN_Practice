@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login Form</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .mainBox {
+            margin-left: 33.33%;
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid rgb(233, 223, 223);
+            height: 680px;
+            width: 400px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            height: 120px;
+            width: 180px;
+        }
+
+        .signUptext {
+            margin-top: -20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgb(83, 80, 80);
+        }
+
+        /* .loginFb button img {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            
+        
+        } */
+        .loginFb button {
+            margin-left: 80px;
+            margin-top: 20px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: white;
+            background-color: #0866ff;
+            border: 1px solid #0866ff;
+            border-radius: 10px;
+            font-weight: 750;
+        }
+
+        .loginFb button span {
+            margin-top: 20px;
+        }
+
+        /* .or {
+            margin-top: 30px;
+            color: rgb(83, 80, 80);
+            margin-left: 190px;
+        } */
+        .or span {
+            margin-top: -18px;
+            color: rgb(83, 80, 80);
+            justify-content: center;
+            display: flex;
+            font-size: 20px;
+        }
+
+        .or {
+            margin-top: 30px;
+            color: rgb(83, 80, 80);
+            justify-content: center;
+            display: flex;
+        }
+
+        .or #orLine {
+            color: rgb(83, 80, 80);
+            margin-top: -6px;
+        }
+
+        #one {
+            color: rgb(233, 223, 223);
+            margin-top: 30px;
+            margin-left: 70px;
+            height: 30px;
+            width: 245px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        #two {
+            margin-top: 10px;
+            margin-left: 70px;
+            height: 30px;
+            width: 245px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        #three {
+            margin-top: 10px;
+            margin-left: 70px;
+            height: 30px;
+            width: 245px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        #four {
+            margin-top: 10px;
+            margin-left: 70px;
+            height: 30px;
+            width: 245px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .text {
+            color: rgb(83, 80, 80);
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .text span a {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+
+        .terms {
+            color: rgb(83, 80, 80);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .terms #onesp a {
+            color: cornflowerblue;
+            text-decoration: none;
+        }
+
+        .terms #twosp {
+            color: rgb(83, 80, 80);
+        }
+
+        .signUpmain button {
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            background-color: #0866ff;
+            border: 1px solid #0866ff;
+            width: 250px;
+            height: 35px;
+            margin-left: 75px;
+            border-radius: 10px;
+            font-weight: 750;
+        }
+
+        .haveAccount {
+            background-color: white;
+            border: 1px solid rgb(233, 223, 223);
+            height: 80px;
+            width: 400px;
+            margin-left: 33.33%;
+            margin-top: 20px;
+        }
+
+        .haveAccount .deco {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 200;
+        }
+
+        .haveAccount p span {
+            color: #0866ff;
+            font-weight: 750;
+        }
+
+        .get {
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 615px;
+        }
+
+        .getImage {
+            margin-left: 535px;
+            padding-bottom: 20px;
+        }
+
+        .getImage img {
+            height: 40px;
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        .footer pre {
+            margin-top: 15px;
+            color: rgb(83, 80, 80);
+            margin-left: 40px;
+            font-size: 12px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .Language {
+            margin-top: 25px;
+            margin-left: 550px;
+            border-style: none;
+            margin-bottom: 100px;
+        }
+
+        .Language select {
+            color: rgb(83, 80, 80);
+            border-style: none;
+        }
+
+        .Language span {
+            font-size: 15px;
+            padding-left: 20px;
+            color: rgb(83, 80, 80);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="logo"><img src="./Logo-Instagram.png" /></div>
+        <div class="signUptext">
+            Sign up to see photos and videos<br />from your friends.
+        </div>
+        <div class="loginFb">
+            <button>
+                <!-- <img src="./icons8-facebook-96.png"> -->
+                <span>Log in with Facebook</span>
+            </button>
+        </div>
+        <div class="or">
+            <pre id="orLine">______________   </pre>
+            <pre>   <span>OR</span>   </pre>
+            <pre id="orLine">   ______________</pre>
+        </div>
+
+        <div class="Fill">
+            <input id="one" type="text" placeholder="Mobile Number or Email" />
+            <input id="two" type="text" placeholder="Full Name" />
+            <input id="three" type="text" placeholder="Username" />
+            <input id="four" type="password" placeholder="Password" />
+        </div>
+        <div class="text">
+            People who use our service may have uploaded <br />your contact
+            information to instagram.<span><a
+                    href="https://help.instagram.com/155833707900388">Learn<br />More</a></span>
+        </div>
+
+        <div class="terms">
+            By signing up, you agree to our
+            <span id="onesp"><a href="https://help.instagram.com/155833707900388">Terms, Privacy<br />Policy <span
+                        id="twosp">and</span> Cookies
+                    Policy.</a></span>
+        </div>
+
+        <div class="signUpmain">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div class="haveAccount">
+        <p class="deco">Have an account? <span>Log in</span></p>
+    </div>
+
+    <div class="get">
+        <p>Get the app.</p>
+    </div>
+    <div class="getImage">
+        <img src="./google-play.png" />
+        <img src="./get-app-by-microsoft.png" />
+    </div>
+
+    <div class="footer">
+        <pre>
+Meta  About  Blog  Jobs  Help  Api  Privacy  Terms  Locations  Instagram  Lite  Threads  Contact  Uploading & Non-Users  Meta  Verified</pre>
+
+        <div class="Language">
+            <select>
+                <option value="">English</option>
+                <option value="">Hindi</option>
+                <option value="">Telgu</option>
+                <option value="">Tamil</option>
+                <option value="">Spanish</option>
+                <option value="">German</option>
+            </select>
+            <span>© 2024 Instagram from Meta</span>
+        </div>
+    </div>
+</body>
+
+</html>
