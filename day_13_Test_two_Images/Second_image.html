@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+        }
+        .container{
+            height: 640px;
+            background-color: rgb(223, 233, 231);
+        }
+        .container .heading {
+            font-size: 10px;
+            text-align: center;
+        }
+        .for_Flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /* Card one section */
+
+        .card_One {
+            width: 300px;
+            height: 510px;
+            margin-left: 70px;
+            margin-top: 50px;
+            background-color:  rgb(223, 233, 231);
+        }
+        .card_one_Heading {
+            height: 100px;
+            width: 300px;
+            background-color: crimson;
+            font-size: 20px;
+            font-weight: 900;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            text-align: center;
+        }
+        .card_one_Heading h1 {
+            padding-top: 25px;
+            color: white;   
+        }
+        .card_one_body {
+            height: 410px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        #card_one_Price {
+            color: crimson;
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 20px;   
+        }
+        #per_Month {
+            color: black;
+            font-size: 22px;
+            font-weight: 700;
+            padding-left: 4px;
+            padding-top: 3px;
+        }
+        .card_one_body pre{
+            color: crimson;
+            font-weight: bolder;
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        .card_one_body ul {
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 70px;
+
+        }
+        .card_one_body li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: crimson;
+            margin-bottom: 20px;
+        
+        i {
+            font-size: 20px;
+        }
+        }
+        .card_one_body button {
+            margin-top: 7px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: crimson;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        /* Card two section */
+
+        .card_Two {
+            width: 300px;
+            height: 510px;
+            margin-left: 70px;
+            margin-top: 50px;
+            background-color:  rgb(223, 233, 231);
+        }
+        .card_two_Heading {
+            height: 100px;
+            width: 300px;
+            background-color: rgb(212, 135, 20);
+            font-size: 20px;
+            font-weight: 900;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            text-align: center;
+        }
+        .card_two_Heading h1 {
+            padding-top: 25px;
+            color: white;   
+        }
+        .card_two_body {
+            height: 410px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        #card_two_Price {
+            color: rgb(212, 135, 20);
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 20px;   
+        }
+        #per_Month {
+            color: black;
+            font-size: 22px;
+            font-weight: 700;
+            padding-left: 8px;
+            padding-top: 3px;
+        }
+        .card_two_body pre{
+            color: rgb(212, 135, 20);
+            font-weight: bolder;
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        .card_two_body ul {
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 70px;
+
+        }
+        .card_two_body li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(212, 135, 20);
+            margin-bottom: 20px;
+        
+        i {
+            font-size: 20px;
+        }
+        }
+        .card_two_body button {
+            margin-top: 7px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(212, 135, 20);
+            border-style: none;
+            cursor: pointer;
+        }
+
+        /* Card three section */
+
+        .card_Three {
+            width: 300px;
+            height: 510px;
+            margin-left: 70px;
+            margin-top: 50px;
+            background-color:  rgb(223, 233, 231);
+        }
+        .card_three_Heading {
+            height: 100px;
+            width: 300px;
+            background-color: rgb(64, 224, 208);
+            font-size: 20px;
+            font-weight: 900;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            text-align: center;
+        }
+        .card_three_Heading h1 {
+            padding-top: 25px;
+            color: white;   
+        }
+        .card_three_body {
+            height: 410px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        #card_three_Price {
+            color: rgb(64, 224, 208);
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 20px;   
+        }
+        #per_Month {
+            color: black;
+            font-size: 22px;
+            font-weight: 700;
+            padding-left: 8px;
+            padding-top: 3px;
+        }
+        .card_three_body pre{
+            color: rgb(64, 224, 208);
+            font-weight: bolder;
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        .card_three_body ul {
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 70px;
+
+        }
+        .card_three_body li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(64, 224, 208);
+            margin-bottom: 20px;
+        
+        i {
+            font-size: 20px;
+        }
+        }
+        .card_three_body button {
+            margin-top: 7px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(64, 224, 208);
+            border-style: none;
+            cursor: pointer;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Pricing Table Style: Demo 313</h1></div>
+        <div class="for_Flex">
+        <div class="card_One">
+        <div class="card_one_Heading">
+        <h1>STANDARD</h1>
+        </div>
+        <div class="card_one_body">
+            <p id="card_one_Price">$ 9.99</p>
+            <p id="per_Month">Per Month</p>
+            <pre>_______________</pre>
+            <ul>
+                <li><i class="fa fa-check-circle"></i> 50GB Disk Space</li>
+                <li><i class="fa fa-check-circle"></i> 50 Email Accounts</li>
+                <li><i class="fa fa-check-circle"></i> 50GB Bandwidth</li>
+                <li><i class="fa fa-times-circle"></i> Maintenance</li>
+                <li><i class="fa fa-times-circle"></i> 15 Subdomains</li>
+            </ul>
+            <button type="button">SIGN UP</button>
+        </div>
+            
+        </div>
+
+        <div class="card_Two">
+            <div class="card_two_Heading">
+            <h1>BUSINESS</h1>
+            </div>
+            <div class="card_two_body">
+                <p id="card_two_Price">$ 19.99</p>
+                <p id="per_Month">Per Month</p>
+                <pre>_______________</pre>
+                <ul>
+                    <li><i class="fa fa-check-circle"></i> 50GB Disk Space</li>
+                    <li><i class="fa fa-check-circle"></i> 50 Email Accounts</li>
+                    <li><i class="fa fa-check-circle"></i> 50GB Bandwidth</li>
+                    <li><i class="fa fa-check-circle"></i> Maintenance</li>
+                    <li><i class="fa fa-times-circle"></i> 15 Subdomains</li>
+                </ul>
+                <button type="button">SIGN UP</button>
+            </div>
+                
+            </div> 
+            
+            <div class="card_Three">
+                <div class="card_three_Heading">
+                <h1>PREMIUM</h1>
+                </div>
+                <div class="card_three_body">
+                    <p id="card_three_Price">$ 29.99</p>
+                    <p id="per_Month">Per Month</p>
+                    <pre>_______________</pre>
+                    <ul>
+                        <li><i class="fa fa-check-circle"></i> 50GB Disk Space</li>
+                        <li><i class="fa fa-check-circle"></i> 50 Email Accounts</li>
+                        <li><i class="fa fa-check-circle"></i> 50GB Bandwidth</li>
+                        <li><i class="fa fa-check-circle"></i> Maintenance</li>
+                        <li><i class="fa fa-check-circle"></i> 15 Subdomains</li>
+                    </ul>
+                    <button type="button">SIGN UP</button>
+                </div>
+                    
+                </div> 
+
+    </div>
+    </div>
+   
+
+
+    
+</body>
+</html>

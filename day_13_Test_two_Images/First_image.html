@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Image</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .container {
+            height: 640px;
+            background-color: rgb(229, 243, 238);
+        }
+        .container .heading {
+            font-size: 14px;
+            padding-top: 5px;
+            text-align: center;
+        }
+        .head_block {
+            width: 1180px;
+            height: 90px;
+            background-color: rgb(25, 52, 54);
+            /* border: 1px solid grey; */
+            margin-left: 90px;
+            margin-top: 0px;
+        }
+        .header h1{
+            font-size: 45px;
+            font-weight: 900;
+            margin-left: 40px;
+            margin-top: 10px;
+            color: white;
+        }
+        .header h1 span {
+            font-weight: 300;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .but_one, .but_two, .but_three, .but_four {
+            display: flex;
+            float: left;
+            padding: 10px 20px;
+            margin-top: 25px;
+            
+        }
+        .but_one{
+            border: 1.5px solid rgb(34, 117, 156);
+            background-color: rgb(34, 117, 156);
+            color: white;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+        }
+        .but_two {
+            border: 1.5px solid green;
+            background-color: green;
+            color: white;
+        }
+        .but_three {
+            border: 1.5px solid rgb(212, 135, 20);
+            background-color: rgb(212, 135, 20);
+            color: white;
+        }
+        .but_four {
+            border: 1.5px solid rgb(226, 31, 31);
+            background-color: rgb(226, 31, 31);
+            color: white;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-right: 35px;
+        }
+
+        /* Title Table starts here */
+        
+        .sec_title {
+            width: 1180px;
+            height: 505px;
+            background-color: white;
+            margin-left: 90px;
+            margin-top: -0.75px;
+        }
+        #border {
+            padding-left: 30px;
+            padding-top: 10px;
+            color: rgb(185, 185, 185, 0.4);
+        }
+        .details {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.4);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #sr_no {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 35px;
+        }
+        #name {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 60px;
+        }
+        #age {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 150px;
+        }
+        #status {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 55px;
+        }
+        #job_title {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 83px;
+        }
+        #action {
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 160px;
+            
+        }
+        .emp_one {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.1);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #emp_one_num {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 35px;
+            color: grey;
+        }
+        #emp_one_name {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 65px;
+            color: grey;
+        }
+        #emp_one_age {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 55px;
+            color: grey;
+        }
+        #emp_one_status {
+            /* font-size: 28px; */
+            /* font-weight: 200; */
+            margin-left: 75px;
+            /* color: grey; */
+        }
+        #emp_one_status button{
+            border: 1.5px solid green;
+            padding: 5px 20px;
+            color: white;
+            background-color: green;
+        }
+        #emp_one_jobTitle {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 85px;
+            color: grey;
+        }
+        #emp_one_action {
+            margin-left: 101px;
+        }
+        #emp_one_action button{
+            border: 1.5px solid rgb(114, 209, 212);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(114,209,212);
+        }
+
+        .emp_two {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.1);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #emp_two_num {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 35px;
+            color: grey;
+        }
+        #emp_two_name {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 65px;
+            color: grey;
+        }
+        #emp_two_age {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 128px;
+            color: grey;
+        }
+        #emp_two_status {
+            /* font-size: 28px; */
+            /* font-weight: 200; */
+            margin-left: 75px;
+            /* color: grey; */
+        }
+        #emp_two_status button{
+            border: 1.5px solid rgb(212, 135, 20);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(212, 135, 20);
+        }
+        #emp_two_jobTitle {
+            font-size: 26px;
+            font-weight: 200;
+            margin-left: 75px;
+            color: grey;
+        }
+        #emp_two_action {
+            margin-left: 80px;
+        }
+        #emp_two_action button{
+            border: 1.5px solid rgb(114, 209, 212);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(114,209,212);
+        }
+
+        .emp_three {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.1);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #emp_three_num {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 35px;
+            color: grey;
+        }
+        #emp_three_name {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 65px;
+            color: grey;
+        }
+        #emp_three_age {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 140px;
+            color: grey;
+        }
+        #emp_three_status {
+            /* font-size: 28px; */
+            /* font-weight: 200; */
+            margin-left: 75px;
+            /* color: grey; */
+        }
+        #emp_three_status button{
+            border: 1.5px solid green;
+            padding: 5px 20px;
+            color: white;
+            background-color: green;
+        }
+        #emp_three_jobTitle {
+            font-size: 26px;
+            font-weight: 200;
+            margin-left: 85px;
+            color: grey;
+        }
+        #emp_three_action {
+            margin-left: 171px;
+        }
+        #emp_three_action button{
+            border: 1.5px solid rgb(114, 209, 212);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(114,209,212);
+        }
+        .emp_four {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.1);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #emp_four_num {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 35px;
+            color: grey;
+        }
+        #emp_four_name {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 65px;
+            color: grey;
+        }
+        #emp_four_age {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 110px;
+            color: grey;
+        }
+        #emp_four_status {
+            /* font-size: 28px; */
+            /* font-weight: 200; */
+            margin-left: 75px;
+            /* color: grey; */
+        }
+        #emp_four_status button{
+            border: 1.5px solid rgb(226, 31, 31);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(226, 31, 31);
+        }
+        #emp_four_jobTitle {
+            font-size: 26px;
+            font-weight: 200;
+            margin-left: 72px;
+            color: grey;
+        }
+        #emp_four_action {
+            margin-left: 110px;
+        }
+        #emp_four_action button{
+            border: 1.5px solid rgb(114, 209, 212);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(114,209,212);
+        }
+
+        .emp_five {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-bottom: 2.25px solid rgba(185, 185, 185, 0.1);
+           margin-left: 30px;
+           margin-right: 50px;   
+        }
+        #emp_five_num {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 35px;
+            color: grey;
+        }
+        #emp_five_name {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 65px;
+            color: grey;
+        }
+        #emp_five_age {
+            font-size: 28px;
+            font-weight: 200;
+            margin-left: 140px;
+            color: grey;
+        }
+        #emp_five_status {
+            /* font-size: 28px; */
+            /* font-weight: 200; */
+            margin-left: 75px;
+            /* color: grey; */
+        }
+        #emp_five_status button{
+            border: 1.5px solid green;
+            padding: 5px 20px;
+            color: white;
+            background-color: green;
+        }
+        #emp_five_jobTitle {
+            font-size: 26px;
+            font-weight: 200;
+            margin-left: 82px;
+            color: grey;
+        }
+        #emp_five_action {
+            margin-left: 72px;
+        }
+        #emp_five_action button{
+            border: 1.5px solid rgb(114, 209, 212);
+            padding: 5px 20px;
+            color: white;
+            background-color: rgb(114,209,212);
+        }
+        .pagination {
+            display: flex;
+        }
+        .pagination .total {
+            font-size: 20px;
+            color: rgba(185, 185, 185, 0.7);
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+        .pagination .all_pages {
+            margin-left: 780px;
+            margin-top: 30px;
+            
+        }
+        .all_pages #pg_one {
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+            border: 0.5px solid rgb(25, 52, 54);
+            padding: 5px 12px 5px 12px;
+            background-color: rgb(25, 52, 54);
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            margin-right: -5px;
+        }
+        .all_pages #pg_two {
+            font-size: 20px;
+            color: rgb(25, 52, 54);
+            font-weight: 700;
+            border: 0.5px solid rgb(25, 52, 54, 0.3);
+            padding: 5px 12px 5px 12px;
+            background-color: white;
+            margin-right: -4px;
+            
+        }
+        .all_pages #pg_three {
+            font-size: 20px;
+            color: rgb(25, 52, 54);
+            font-weight: 700;
+            border: 0.5px solid rgb(25, 52, 54, 0.3);
+            padding: 5px 12px 5px 12px;
+            background-color: white;
+            margin-right: -4px;
+        }
+        .all_pages #pg_four {
+            font-size: 20px;
+            color: rgb(25, 52, 54);
+            font-weight: 700;
+            border: 0.5px solid rgb(25, 52, 54, 0.3);
+            padding: 5px 12px 5px 12px;
+            background-color: white;
+            margin-right: -5px;
+        }
+        .all_pages #pg_five {
+            font-size: 20px;
+            color: rgb(25, 52, 54);
+            font-weight: 700;
+            border: 0.5px solid rgb(25, 52, 54, 0.3);
+            padding: 5px 12px 5px 12px;
+            background-color: white;
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
+            
+        }
+
+
+
+       
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Table Style: Demo 2</h1></div>
+            <div class="head_block">                                <!--Head-block div starts-->
+                <nav>
+                    <div class="header"><h1><span>Data</span> List</h1></div>
+                    <ul class="nav-button">
+                        <div class="but_one"><input type="radio" name="All"><pre>  All</pre></div>
+                        <div class="but_two"><input type="radio" name="All"><pre>  Active</pre></div>
+                        <div class="but_three"><input type="radio" name="All"><pre>  Inactive</pre></div>
+                        <div class="but_four"><input type="radio" name="All"> <pre>  Blocked</pre></div>
+
+                    </ul>
+                </nav>
+            </div>                                                  <!--Head-block div ends-->
+
+    <div class="sec_title">
+        <pre id="border">____________________________________________________________________________________________________________________________</pre>
+        <div class="details">
+            <span id="sr_no">#</span>
+            <span id="name">Full Name</span>
+            <span id="age">Age</span>
+            <span id="status">Status</span>
+            <span id="job_title">Job Title</span>
+            <span id="action">Action</span>
+        </div>
+        <div class="emp_one">
+            <span id="emp_one_num">1</span>
+            <span id="emp_one_name">Vincent Williamson</span>
+            <span id="emp_one_age">31</span>
+            <span id="emp_one_status"><button type="button">Active</button></span>
+            <span id="emp_one_jobTitle">ios Developer</span>
+            <span id="emp_one_action"><button type="button">Manage</button></span>    
+        </div>
+        <div class="emp_two">
+            <span id="emp_two_num">2</span>
+            <span id="emp_two_name">Taylor Reyes</span>
+            <span id="emp_two_age">22</span>
+            <span id="emp_two_status"><button type="button">Inactive</button></span>
+            <span id="emp_two_jobTitle">UI/UX Developer</span>
+            <span id="emp_two_action"><button type="button">Manage</button></span>    
+        </div>
+        <div class="emp_three">
+            <span id="emp_three_num">3</span>
+            <span id="emp_three_name">Justin Block</span>
+            <span id="emp_three_age">26</span>
+            <span id="emp_three_status"><button type="button">Active</button></span>
+            <span id="emp_three_jobTitle">Frontend</span>
+            <span id="emp_three_action"><button type="button">Manage</button></span>    
+        </div>
+        <div class="emp_four">
+            <span id="emp_four_num">4</span>
+            <span id="emp_four_name">Sean Guzman</span>
+            <span id="emp_four_age">26</span>
+            <span id="emp_four_status"><button type="button">Blocked</button></span>
+            <span id="emp_four_jobTitle">Web Designer</span>
+            <span id="emp_four_action"><button type="button">Manage</button></span>    
+        </div>
+        <div class="emp_five">
+            <span id="emp_five_num">5</span>
+            <span id="emp_five_name">Keith Carter</span>
+            <span id="emp_five_age">20</span>
+            <span id="emp_five_status"><button type="button">Active</button></span>
+            <span id="emp_five_jobTitle">Graphic Designer</span>
+            <span id="emp_five_action"><button type="button">Manage</button></span>    
+        </div>
+        <div class="pagination">
+            <div class="total">Page 1 of 5</div>
+            <div class="all_pages">
+                <span id="pg_one">1</span>
+                <span id="pg_two">2</span>
+                <span id="pg_three">3</span>
+                <span id="pg_four">4</span>
+                <span id="pg_five">5</span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+    
+   
+    
+</body>
+</html>
