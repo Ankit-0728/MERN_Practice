@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo_Class_and_Element</title>
+    <style>
+        .container {
+            background-color: rgb(136, 40, 136);
+        }
+        ol :first-child {
+            color: red;
+        }
+
+        p:empty {
+            border: 5px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        p:only-child {
+            background-color: yellow;
+        }
+
+        input[type='text']:focus {
+            background-color: rgb(136, 41, 41);
+        }
+
+        input[type='number']:read-only {
+            background-color: red;
+        }
+
+        input:read-only {
+            background-color: yellow;
+        }
+        
+                
+
+
+    </style>
+</head>
+<body>
+    <div class="container">Hello</div>
+
+    <p></p>
+
+
+    <ol>
+        <li>Ankit</li>
+        <li>Aman</li>
+        <li>Anshul</li>
+        <li>Anurag</li>
+    </ol>
+
+    <br>
+    <br>
+    <center>
+    <div>
+        <p>Hello</p>
+        <p>Hey</p>
+    </div>
+
+    <div>
+        <p>Ankit</p>
+    </div>
+
+    </center>
+
+
+    <form>
+        <label>Name : </label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Number : </label>
+        <input type="number" value="8770249380" readonly>
+        <br>
+        <br>
+        <label>Email : </label>
+        <input type="email">
+        <br>
+        <br>
+        <label>Password : </label>
+        <input type="password">
+        <br>
+        <br>
+        <input type="submit">
+
+    </form>
+    
+    
+</body>
+</html>
